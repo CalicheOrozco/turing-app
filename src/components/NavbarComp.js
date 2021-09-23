@@ -8,13 +8,25 @@ const NavbarComp = () => {
         <div>
             <Navbar bg="dark" expand="lg" variant={"dark"}>
                 
-                    <Navbar.Brand href="#home">Turing</Navbar.Brand>
+                    <Navbar.Brand href="#home" className="ms-lg-5">
+                        <img
+                        alt="Logo Turing"
+                        src="/img/logo.png"
+                        width="150"
+                        height="50"
+                        className="d-inline-block align-top"
+                        />{' '}
+                    
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav >
+                        <Nav.Link href="#home" className="ms-lg-5 fw-bold text-light">Inicio</Nav.Link>
+                        <Nav.Link href="#link" className="ms-lg-5 fw-bold text-light">Contactanos</Nav.Link>
+                        
+                    </Nav>
                     <Nav className="ms-auto">
-                        <Nav.Link href="#home">Dashboard</Nav.Link>
-                        <Nav.Link href="#link">Link</Nav.Link>
-                        <Button onClick={() => loginWithRedirect()} variant="primary" size="lg" className="me-2">Log in</Button>
+                        <Button onClick={() => loginWithRedirect()} variant="primary" size="lg" className="me-3">Inciar sesión</Button>
                         
                     </Nav>
                     </Navbar.Collapse>
