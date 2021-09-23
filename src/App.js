@@ -14,11 +14,16 @@ function App() {
   return (
     <div className="App ">
       {isAuthenticated ?
-      <NavbarCompOut />
+      <div className='container-fluid bg-dark'>
+        <NavbarCompOut />
+      </div>
         
 
         :
-        <NavbarComp />}
+        <div className='container-fluid bg-dark'>
+        <NavbarComp />
+      </div>
+      }
       
       <div className="container">
       

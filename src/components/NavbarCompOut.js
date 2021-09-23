@@ -21,7 +21,7 @@ const NavbarCompOut = () => {
                       
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav >
+                    <Nav className='d-none d-lg-flex' >
                         <Nav.Link href="#home" className="ms-lg-5 fw-bold text-light">Oficial</Nav.Link>
                         <Nav.Link href="#link" className="ms-lg-5 fw-bold text-light">Operador</Nav.Link>
                         <Nav.Link href="#link" className="ms-lg-5 fw-bold text-light">Civil</Nav.Link>
