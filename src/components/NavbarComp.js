@@ -1,4 +1,5 @@
 import React from 'react'
+// import {Link} from 'react-router-dom'
 import { Navbar, Nav, Button  } from 'react-bootstrap'
 import { useAuth0 } from "@auth0/auth0-react";
 
@@ -21,8 +22,8 @@ const NavbarComp = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav >
-                        <Nav.Link href="#home" className="ms-lg-5 fw-bold text-light">Inicio</Nav.Link>
-                        <Nav.Link href="#link" className="ms-lg-5 fw-bold text-light">Contactanos</Nav.Link>
+                        <Nav.Link href="home" className="ms-lg-5 fw-bold text-light">Inicio</Nav.Link>
+                        <Nav.Link href="link" className="ms-lg-5 fw-bold text-light">Contactanos</Nav.Link>
                         
                     </Nav>
                     <Nav className="ms-auto">

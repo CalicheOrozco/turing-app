@@ -1,10 +1,13 @@
 import './App.css';
 
 import Profile from './components/Profile'
+// import {Link, BrowserRouter} from 'react-router-dom'
 
 import { useAuth0 } from "@auth0/auth0-react";
 import NavbarComp from './components/NavbarComp';
 import NavbarCompOut from './components/NavbarCompOut';
+import Oficial from './components/Oficial';
+import FileUploadComponent from './components/fileUploadComponent';
 
 
 function App() {
@@ -25,12 +28,17 @@ function App() {
       </div>
       }
       
-      <div className="container">
+      <div className="container d-flex justify-content-center align-items-center">
       
       
       
       
-      <Profile />
+      {/* <Profile /> */}
+      <Oficial>
+          <FileUploadComponent />
+        </Oficial>
+      
+      
 
       </div>
       
