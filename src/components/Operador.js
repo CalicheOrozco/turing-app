@@ -1,7 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-
-function Oficial({children}) {
+function Operador({children}) {
     return (
         <div className="mt-3 container">
             <div className="row">
@@ -15,11 +14,16 @@ function Oficial({children}) {
                 <div className="col mt-3">
                 {children[2]}
                 </div>
-            </div>
+                <div className="col mt-3">
+                {children[3]}
+                </div>
+                </div>
+                
+            
             
             
           </div>
-        )
+    )
 }
 
-export default Oficial
+export default Operador

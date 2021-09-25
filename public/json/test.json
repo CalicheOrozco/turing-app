@@ -1,0 +1,155 @@
+{
+    "Labels": [
+        {
+            "Name": "Construction Crane",
+            "Confidence": 89.27946472167969,
+            "Instances": [
+                {
+                    "BoundingBox": {
+                        "Width": 0.7606710195541382,
+                        "Height": 0.8029671907424927,
+                        "Left": 0.043395113199949265,
+                        "Top": 0.15705226361751556
+                    },
+                    "Confidence": 89.27946472167969
+                }
+            ],
+            "Parents": []
+        },
+        {
+            "Name": "Transportation",
+            "Confidence": 87.50550079345703,
+            "Instances": [],
+            "Parents": []
+        },
+        {
+            "Name": "Vehicle",
+            "Confidence": 86.14632415771484,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Transportation"
+                }
+            ]
+        },
+        {
+            "Name": "Urban",
+            "Confidence": 84.3016586303711,
+            "Instances": [],
+            "Parents": []
+        },
+        {
+            "Name": "Wood",
+            "Confidence": 79.12796020507812,
+            "Instances": [],
+            "Parents": []
+        },
+        {
+            "Name": "Road",
+            "Confidence": 75.42095947265625,
+            "Instances": [],
+            "Parents": []
+        },
+        {
+            "Name": "Building",
+            "Confidence": 73.2806396484375,
+            "Instances": [],
+            "Parents": []
+        },
+        {
+            "Name": "City",
+            "Confidence": 68.39865112304688,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Urban"
+                },
+                {
+                    "Name": "Building"
+                }
+            ]
+        },
+        {
+            "Name": "Town",
+            "Confidence": 68.39865112304688,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Urban"
+                },
+                {
+                    "Name": "Building"
+                }
+            ]
+        },
+        {
+            "Name": "Housing",
+            "Confidence": 63.5233268737793,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Building"
+                }
+            ]
+        },
+        {
+            "Name": "Boat",
+            "Confidence": 60.963443756103516,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Vehicle"
+                },
+                {
+                    "Name": "Transportation"
+                }
+            ]
+        },
+        {
+            "Name": "Street",
+            "Confidence": 58.78661346435547,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "City"
+                },
+                {
+                    "Name": "Road"
+                },
+                {
+                    "Name": "Urban"
+                },
+                {
+                    "Name": "Building"
+                }
+            ]
+        },
+        {
+            "Name": "Watercraft",
+            "Confidence": 55.02998733520508,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Vehicle"
+                },
+                {
+                    "Name": "Transportation"
+                }
+            ]
+        },
+        {
+            "Name": "Vessel",
+            "Confidence": 55.02998733520508,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Vehicle"
+                },
+                {
+                    "Name": "Transportation"
+                }
+            ]
+        }
+    ],
+    "LabelModelVersion": "2.0"
+}

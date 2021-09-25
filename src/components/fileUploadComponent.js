@@ -13,9 +13,14 @@ const FileUploadComponent = () => {
     const onFileChange = ({ meta, file }, status) => { 
         console.log(status, meta, file) 
     }
-
+    //Este es la funcion para enviar los datos
     const onSubmit = (files, allFiles) => {
+
+        
+        document.getElementsByClassName("list-group").style.display="block"
+        
         allFiles.forEach(f => f.remove())
+        console.log(files)
     }
 
     const getFilesFromEvent = e => {
@@ -35,14 +40,7 @@ const FileUploadComponent = () => {
 
         return (
             <>
-            <h4>Motivo:</h4>
-            
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Selecciona motivo del reporte</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select><label className="btn btn-danger mt-4">
+            <label className="btn btn-danger mt-4">
                     {textMsg}
                     <input
                         style={{ display: 'none' }}
@@ -79,7 +77,7 @@ const FileUploadComponent = () => {
                 dropzone: { width: '100%', height: 400 },
                 dropzoneActive: { borderColor: 'green' },
             }}
-            inputLabel='escribe'            
+                        
         />
     );
 };

@@ -1,17 +1,27 @@
 import './App.css';
 
-import Profile from './components/Profile'
+
 // import {Link, BrowserRouter} from 'react-router-dom'
 
 import { useAuth0 } from "@auth0/auth0-react";
 import NavbarComp from './components/NavbarComp';
 import NavbarCompOut from './components/NavbarCompOut';
 import Oficial from './components/Oficial';
-import FileUploadComponent from './components/fileUploadComponent';
+import FileUploadComponent from './components/FileUploadComponent';
+import JsonRead from './components/JsonRead';
+import Notification from './components/Notification';
+import Operador from './components/Operador';
+import Solicitudes from './Solicitudes';
+import Respuestas from './Respuestas';
+import SMS from './components/SMS';
 
 
 function App() {
-  const { isAuthenticated, isLoading } = useAuth0();
+  const { isAuthenticated } = useAuth0();
+
+  
+
+    
 
   // if (isLoading) return <h1>Cargando.....</h1>
   return (
@@ -34,9 +44,19 @@ function App() {
       
       
       {/* <Profile /> */}
-      <Oficial>
+      {/* <Oficial>
           <FileUploadComponent />
-        </Oficial>
+          <JsonRead/>
+          <Notification/>
+      </Oficial> */}
+
+      <Operador>
+          <FileUploadComponent />
+          <Solicitudes/>
+          <Respuestas/>
+          <SMS/>
+      </Operador>
+        
       
       
 
