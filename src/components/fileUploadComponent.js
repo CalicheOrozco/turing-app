@@ -17,7 +17,7 @@ const FileUploadComponent = () => {
     const onSubmit = (files, allFiles) => {
 
         
-        document.getElementsByClassName("list-group").style.display="block"
+        
         
         allFiles.forEach(f => f.remove())
         console.log(files)
